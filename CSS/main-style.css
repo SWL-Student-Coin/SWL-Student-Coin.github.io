@@ -1,7 +1,10 @@
-body {
+html, body {
     margin: 0%;
-    background-color: rgb(84, 81, 81);
+    background-image: linear-gradient(rgb(72, 72, 72), rgb(85, 85, 85));
     overflow: auto;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 span.topbar {
@@ -41,10 +44,10 @@ button.topbar {
     aspect-ratio: 1;
     background-color: inherit;
     border: 0px;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-size: 170%;
     transition: 0.3s;
+    padding: 0%;
+    color: white;
 }
 
 button.topbar#about {
@@ -57,10 +60,42 @@ button:hover {
 
 .about {
     background-color: rgb(98, 98, 98);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
     border-radius: 15px;
     width: 96%;
     padding: 1%;
     margin: 1%;
+}
+
+.input-label {
+    font-size: 250%;
+}
+
+.input-box {
+    font-size: xx-large;
+}
+
+.input-button {
+    width: 10%;
+    aspect-ratio: 3;
+    background-color: rgb(91, 1, 1);
+    font-size: 250%;
+    transition: 0.3s;
+    padding: 0%;
+    color: white;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+@keyframes submit {
+    0%, 100% {transform: translateY(0px);}
+    50% {transform: translateY(4px);}
+}
+
+.input-button:active {
+    animation: submit;
+    animation-duration: 0.3s;
+}
+
+.input-div {
+    width: 100%;
 }

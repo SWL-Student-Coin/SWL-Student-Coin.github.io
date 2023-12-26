@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<htmL>
+    <head>
+        <script src="../JS/click_events.js"></script>
+        <link rel="stylesheet" type="text/css" href="../CSS/main-style.css" charset="UTF-8">
+    </head>
+
+    <body>
+        <span class="topbar">
+            <input id="home-button" type="image" src="../images/swl-student-coin.png" onclick="page_redirect('home');">
+        </span>
+        <br>
+        <div class="input-div" align="center">
+            <label class="input-label" for="address">Address</label><br>
+            <input class="input-box" type="text" id="address" name="address"><br>
+            <label class="input-label" for="priv_key">Private Key </label><br>
+            <input class="input-box" type="password" id="priv_key" name="priv_key"><br><br>
+            <Button class="input-button" id="submit">Transfer</Button><br><br>
+            <small>All transactions are final. You can't undo them.</small>
+        </div>
+    </body>
+</htmL>
