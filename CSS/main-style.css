@@ -75,10 +75,10 @@ button:hover {
 }
 
 .input-button {
-    width: 10%;
+    width: 200px;
     aspect-ratio: 3;
     background-color: rgb(91, 1, 1);
-    font-size: 250%;
+    font-size: x-large;
     transition: 0.3s;
     padding: 0%;
     color: white;
@@ -93,7 +93,7 @@ button:hover {
 
 .input-button:active {
     animation: submit;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
 }
 
 .input-div {
