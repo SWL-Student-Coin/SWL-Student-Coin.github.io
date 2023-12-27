@@ -67,7 +67,7 @@ button:hover {
 }
 
 .input-label {
-    font-size: 250%;
+    font-size: 300%;
 }
 
 .input-box {
@@ -78,7 +78,7 @@ button:hover {
     width: 200px;
     aspect-ratio: 3;
     background-color: rgb(91, 1, 1);
-    font-size: x-large;
+    font-size: xx-large;
     transition: 0.3s;
     padding: 0%;
     color: white;
