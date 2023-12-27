@@ -99,3 +99,29 @@ button:hover {
 .input-div {
     width: 100%;
 }
+
+div.logs {
+    background-color: rgb(98, 98, 98);
+    border-radius: 15px;
+    width: 96%;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+}
+
+span.logs {
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
+}
+
+p.log-field {
+    margin: 1%;
+    padding: 2%;
+    border-radius: 7px;
+    background-color: rgb(64, 64, 64);
+}
+
+h1.logs {
+    margin: 1%;
+}
