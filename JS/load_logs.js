@@ -1,11 +1,13 @@
 window.onload = load_logs;
 
+const api = 'https://a442-2607-fea8-bb1e-c400-4599-b1f2-5efb-6980.ngrok-free.app';
+
 function load_logs() {
     const student_span = document.getElementById("students-span");
     const transaction_span = document.getElementById("transactions-span");
 
     // Students
-    fetch_fields("http://174.115.41.98:5000/all_accounts")
+    fetch_fields(api+"/all_accounts")
     .then(data => {
         for (let i = 0; i < data.length; i++) {
             const account = data[i];
@@ -26,7 +28,10 @@ function load_logs() {
 
 function fetch_fields(url) {
     return fetch(url, {
-      method: 'GET'
+      method: 'GET',
+      headers: {
+        "ngrok-skip-browser-warning": 1
+      }
     })
     .then(response => {
     if (!response.ok) {
@@ -36,7 +41,7 @@ function fetch_fields(url) {
     return response.json();
     })
     .catch(error => {
-    console.error('Error:', error);
+        console.error('Error:', error);
     });
 }
 
