@@ -3,7 +3,3 @@ function page_redirect(page) {
     
     window.location.replace(redirect_url);
 }
-
-function transfer() {
-    
-}

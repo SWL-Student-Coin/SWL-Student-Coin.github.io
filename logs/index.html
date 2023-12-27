@@ -5,6 +5,7 @@
         <link rel="icon" type="image/x-icon" href="../images/swl-student-coin.png">
         <title>SWL Student Coin - Logs</title>
         <script src="../JS/click_events.js"></script>
+        <script src="../JS/load_logs.js"></script>
         <link rel="stylesheet" type="text/css" href="../CSS/main-style.css" charset="UTF-8">
     </head>
 
@@ -13,16 +14,11 @@
             <input id="home-button" type="image" src="../images/swl-student-coin.png" onclick="page_redirect('home');">
         </span>
         <div class="logs">
-            <span class="logs">
+            <span class="logs" id="students-span">
                 <h1 class="logs">Students</h1>
-                <p class="log-field">Name: <b><em>Doe</em>, John</b><br>Address: <b>0001</b><br>SWL Coins: <b>100,000</b><br>Join Date: <b>Dec 25 2023</b><br>Transactions: <b>(1, 2, 3)</b></p>
-                <p class="log-field">Name: <b><em>Doe</em>, Jane</b><br>Address: <b>0002</b><br>SWL Coins: <b>50,000</b><br>Join Date: <b>Dec 25 2023</b><br>Transactions: <b>(1, 2)</b></p>
             </span>
-            <span class="logs">
+            <span class="logs" id="transactions-span">
                 <h1 class="logs">Transactions</h1>
-                <p class="log-field">Sender: <b><em>Doe</em>, John</b><br>Recipient: <b><em>Doe</em>, Jane</b><br>Transaction ID: <b>1</b><br>SWL Coins: <b>10</b><br>Transaction Date: <b>Dec 25 2023</b></p>
-                <p class="log-field">Sender: <b><em>Doe</em>, Jane</b><br>Recipient: <b><em>Doe</em>, John</b><br>Transaction ID: <b>2</b><br>SWL Coins: <b>50,000</b><br>Transaction Date: <b>Dec 26 2023</b></p>
-                <p class="log-field">Sender: <b><em>Doe</em>, John</b><br>Recipient: <b><em>Jobs</em>, Steve</b><br>Transaction ID: <b>3</b><br>SWL Coins: <b>1,000,000</b><br>Transaction Date: <b>Dec 27 2023</b></p>
             </span>
         </div>
     </body>
