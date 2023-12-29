@@ -1,6 +1,6 @@
 window.onload = load_logs;
 
-const api = 'https://a442-2607-fea8-bb1e-c400-4599-b1f2-5efb-6980.ngrok-free.app';
+const api = 'https://api-server.ca';
 
 function load_logs() {
     const student_span = document.getElementById("students-span");
