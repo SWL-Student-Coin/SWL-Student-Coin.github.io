@@ -24,6 +24,24 @@ function load_logs() {
             add_field(student_span, field);
         }
     });
+
+    // Transactions
+    fetch_fields(api+"/all_transactions")
+    .then(data => {
+        for (let i = 0; i < data.length; i++) {
+            const transaction = data[i];
+            
+            transaction_id = transaction["address"];
+            amount = transaction["balance"];
+            transaction_datetime = transaction["join_datetime"];
+            sender = transaction["sender"];
+            recipient = transaction["recipient"];
+
+            field = `Sender: <b>${sender}</b><br>Recipient: <b>${recipient}</b><br>Transaction ID: <b>${transaction_id}</b><br>SWL Coins: <b>${amount}</b><br>Transaction Date: <b>${transaction_datetime}</b>`;
+
+            add_field(student_span, field);
+        }
+    });
 }
 
 function fetch_fields(url) {
