@@ -125,3 +125,7 @@ p.log-field {
 h1.logs {
     margin: 1%;
 }
+
+#status_message {
+    color: rgb(0, 255, 0);
+}

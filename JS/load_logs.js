@@ -1,6 +1,6 @@
 window.onload = load_logs;
 
-const api = 'https://api-server';
+const api = "https://api-server.ca";
 
 function load_logs() {
     const student_span = document.getElementById("students-span");
