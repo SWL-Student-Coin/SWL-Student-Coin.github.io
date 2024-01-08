@@ -21,7 +21,7 @@ function transfer() {
 
 function send_transfer(url) {
     return fetch(url, {
-        method: 'POST',
+        method: 'GET',
         mode: "cors"
       })
       .then(response => {
